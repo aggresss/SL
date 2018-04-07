@@ -53,7 +53,7 @@ int INTR      = 1;
 int PASSNUM = 5;
 int ALL_LENGTH = 0;
 int DIREC = RTOL;
-int WAIT_TIME = 50000;  //火车移动速度 100000为1秒,最适宜为0.5秒
+int WAIT_TIME = 60000;  //火车移动速度 100000为1秒,最适宜为0.5秒
 
 int my_mvaddstr(int y, int x, char *str)
 {
@@ -165,7 +165,7 @@ int main(int argc, char *argv[])
     p = 3 * COLS / 10;
     pp = (char*)malloc((size_t)(COLS + ALL_LENGTH + 10) * (D51HIGHT + 1) * (D51PATTERNS + 1));
     for (i = 0; i <= (COLS + ALL_LENGTH + 1) * (D51HIGHT + 1) * D51PATTERNS; ++i) {
-      pp[i] = (char)NULL;
+      pp[i] = '\0';
     }
 
     for (j = 0; j < D51PATTERNS; ++j) {
