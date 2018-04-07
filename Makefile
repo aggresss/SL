@@ -6,6 +6,7 @@
 #       Modify for Debian by Hiroyuki Yamamoto <yama1066@gmail.com>
 #         2008/12/27
 #==========================================
+# sudo apt-get install build-essential libncurses5-dev gdb
 
 all: sl sl-h
 
